@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="map.css">
+
+    <title>子育て施設一覧: 十和田市オープンデータアプリ</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">十和田市オープンデータアプリ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">ホーム<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">アプリ一覧</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown">
+                <a class="dropdown-item" href="aed.html">AED設置場所一覧</a>
+                <a class="dropdown-item" href="care_service.html">介護サービス施設一覧</a>
+                <a class="dropdown-item" href="hospital.html">医療機関一覧</a>
+                <a class="dropdown-item" href="tourism.html">観光施設一覧</a>
+                <a class="dropdown-item" href="public_wireless_lan.html">公衆無線LANアクセスポイント一覧</a>
+                <a class="dropdown-item" href="evacuation_space.html">指定緊急避難場所一覧</a>
+                <a class="dropdown-item" href="public_facility.html">公衆施設一覧</a>
+                <a class="dropdown-item" href="preschool.html">子育て施設一覧</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data_origin.html">使用データ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">このサイトについて</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
+        <h1>子育て施設一覧</h1>
+        <div id="map"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">八戸工業大学 小久保研究室</span>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="preschool.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3igLoXPMmVDozoUpdWh2BVvoXR0alB0w&callback=initMap" async defer></script>
+  </body>
+</html>
