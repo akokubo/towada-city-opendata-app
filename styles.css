@@ -39,3 +39,8 @@ code {
 .page-header {
   margin-top: 60px;
 }
+
+
+a.navbar-brand {
+  font-size: 0.9em;
+}
