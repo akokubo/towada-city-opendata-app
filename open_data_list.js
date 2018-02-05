@@ -9,7 +9,7 @@ function addEntry(entry) {
     content += "<p>データ概要: " + entry["データ概要"] + "</p>";
     content += "<p>分類: " + entry["分類"] + "</p>";
     content += "<p>更新頻度: " + entry["更新頻度"] + "</p>";
-    content += "<p><a class=\"btn btn-secondary\" href=\"" + entry["ファイル名"] + ".html\" role=\"button\">アプリを見る &raquo;</a></p>";
+    content += "<p><a class=\"btn btn-primary\" href=\"" + entry["ファイル名"] + ".html\" role=\"button\">アプリを見る &raquo;</a></p>";
     content += "</div>";
     $("#entries").append(content);
 }
@@ -22,8 +22,17 @@ function initEntries() {
         function (entries) {
             var i = 0;
             while (i < entries.length) {
+                if (i % 3 === 0) {
+                    $("#entries").append("<div class=\"row\">");
+                }
                 addEntry(entries[i]);
+                if (i % 3 === 2) {
+                    $("#entries").append("</div>");
+                }
                 i += 1;
+            }
+            if (i % 3 !== 0) {
+                $("#entries").append("</div>");
             }
         }
     );
